@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent scrolling */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center; /* Center horizontally */
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Fade-In Animation for Body */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+main {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Align content to the top */
+    justify-content: center; /* Center horizontally */
+    gap: 30px;
+    margin-top: 20px; /* Add some margin from the top */
+}
+
+.phoneImg {
+    max-width: 30%;
+    height: auto;
+    animation: slideInLeft 1.5s ease-in-out;
+}
+
+/* Slide-In Animation for Phone Image */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.form-div {
+    max-width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align form content to the top */
+    align-items: center;
+    animation: slideInRight 1.5s ease-in-out;
+}
+
+/* Slide-In Animation for Form */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.form-div form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: 1px solid #444;
+    border-radius: 10px;
+    background: #111;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 350px;
+}
+
+.instalogo {
+    width: 150px;
+    margin: 10px 0;
+    animation: popIn 1.2s ease-in-out;
+}
+
+/* Pop-In Animation for Logo */
+@keyframes popIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.input {
+    width: 90%;
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: 1px solid #444;
+    margin: 5px 0;
+    font-size: 0.9rem;
+    background: #222;
+    color: #fff;
+}
+
+.input::placeholder {
+    color: #aaa;
+}
+
+.login-btn {
+    width: 90%;
+    padding: 0.6rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    background-color: #1a73e8;
+    border: none;
+    border-radius: 8px;
+    margin: 10px 0;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+.login-btn:hover {
+    background-color: #1558b0;
+    transform: scale(1.1); /* Subtle bounce effect on hover */
+}
+
+/* Bounce-In Animation for Button */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#or {
+    margin: 10px 0;
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+.fb-login {
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #4285f4;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-up {
+    border: 2px dashed rgba(128, 128, 128, 0.5);
+    border-radius: 12px;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    font-size: 0.85rem;
+    background: #222;
+    color: #fff;
+}
+
+.get-app {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+    color: #aaa;
+}
+
+.store {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#play, #apple {
+    width: 130px;
+    border-radius: 8px;
+}
+
+.footer-nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: transparent;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav-list li {
+    display: inline-block;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 0.8rem;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #fff;
+}
+
+.footer-text {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column; /* Stack elements */
+        gap: 20px; /* Reduce spacing */
+        margin-top: 10px;
+    }
+
+    .phoneImg {
+        max-width: 80%; /* Reduce image size */
+    }
+
+    .form-div {
+        max-width: 90%; /* Reduce form width */
+    }
+
+    .instalogo {
+        width: 120px; /* Adjust logo size */
+    }
+
+    .input,
+    .login-btn {
+        font-size: 0.8rem; /* Adjust input and button size */
+    }
+
+    #play, #apple {
+        width: 100px; /* Adjust button sizes */
+    }
+}
