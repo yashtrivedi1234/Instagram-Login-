@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../Programming Languages"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Development"
+	}
+}
